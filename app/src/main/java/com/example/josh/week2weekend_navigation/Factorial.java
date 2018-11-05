@@ -6,7 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.content.AsyncTaskLoader;
 
-public class Factorial extends AsyncTaskLoader {
+public class Factorial extends AsyncTaskLoader<String> {
 
 
     public Factorial(@NonNull Context context) {
@@ -15,7 +15,7 @@ public class Factorial extends AsyncTaskLoader {
 
     @Nullable
     @Override
-    public Integer loadInBackground() {
+    public String loadInBackground() {
         return null;
     }
 }

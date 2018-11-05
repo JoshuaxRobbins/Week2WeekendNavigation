@@ -94,6 +94,10 @@ public class MainActivity extends AppCompatActivity {
                 setTextSize(textSize);
                 return true;
 
+            case R.id.action_back:
+                finish();
+                return true;
+
 
         }
         return super.onOptionsItemSelected(item);

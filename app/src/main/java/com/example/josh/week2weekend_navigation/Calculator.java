@@ -361,6 +361,9 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
                 setTextSize(textSize);
                 return true;
 
+            case R.id.action_back:
+                finish();
+                return true;
 
         }
         return super.onOptionsItemSelected(item);
